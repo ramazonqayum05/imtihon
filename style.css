@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.for_background {
+    background-color: rgb(1, 78, 86);
+}
+
+.for_background2 {
+    background-color: rgb(1, 47, 52);
+}
+
+.for_background3 {
+    background: rgb(246, 126, 126);
+}
+
+.container {
+    max-width: 1440px;
+    padding: 55px 170px 0;
+    margin: auto;
+}
+
+header {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 125px;
+}
+
+header .ul_div {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+header .ul_div ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+header .ul_div ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    transition: all .3s ease;
+}
+
+header .ul_div ul a:hover {
+    color: rgb(246, 126, 126);
+}
+
+header .contact_us_btn {
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 24px;
+    padding: 10px 32px;
+    background-color: rgb(1, 78, 86);
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    transition: all .3s ease;
+}
+
+header .menu_btn {
+    display: none;
+}
+
+header .contact_us_btn:hover {
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 24px;
+    padding: 10px 32px;
+    cursor: pointer;
+}
+
+/* SECTION1 */
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 245px;
+}
+
+.section1 h1 {
+    font-family: Livvic;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.section1 h1 span {
+    color: rgb(246, 126, 126);
+}
+
+.section1 p {
+    color: rgb(255, 255, 255);
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 40%;
+
+    margin-bottom: 15px;
+}
+
+    /* SECTION2 */
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 140px;
+}
+
+.section2 > h1 {
+    color: rgb(255, 255, 255);
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 40%;
+}
+
+.section2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.section2 ul li {
+    display: flex;
+}
+
+.section2 ul li p {
+    display: flex;
+    align-items: end;
+    color: rgb(255, 255, 255);
+    font-family: Livvic;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.section2 ul li img {
+    margin-right: 25px;
+    height: 72px;
+}
+
+.section2 ul li h1 {
+    color: rgb(246, 126, 126);
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+    /* SECTION3 */
+.section3 {
+    display: flex;
+    flex-direction: column;
+    padding: 155px 0 145px;
+    gap: 40px;
+    text-align: center;
+}
+
+.section3 > h1 {
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.section3 > h1 span {
+    color: rgb(121, 200, 199);
+}
+
+.section3 .people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section3 .people > div {
+    position: relative;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.section3 .people > div > img {
+    position: absolute;
+    width: 67px;
+    height: 56px;
+}
+
+.section3 .people > div .name {
+    position: relative;
+}
+
+.section3 .people > div .name .p1 {
+    color: rgb(255, 255, 255);
+    font-family: Livvic;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 36px 0 24px;
+}
+
+.section3 .people > div .name h1 {
+    color: rgb(121, 200, 199);
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.section3 .people > div .name .p2 {
+    color: rgb(255, 255, 255);
+    font-family: Livvic;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 32px;
+} 
+
+.section3 .people > div .name img {
+    margin-bottom: 10px;
+    width: 62px;
+    height: 62px;
+}
+
+    /* SECTION4 */
+.section4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 0 76px;
+}
+
+.section4 h1 {
+    color: rgb(1, 47, 52);
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.section4 button {
+    box-sizing: border-box;
+    border: 2px solid rgb(1, 47, 52);
+    border-radius: 24px;
+    padding: 10px 32px;
+    background-color: rgb(246, 126, 126);
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(1, 47, 52);
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    transition: all .3s ease;
+}
+
+.section4 button:hover {
+    background-color: rgb(1, 47, 52);
+    color: white;
+}
+
+    /* SECTION5 */
+.section5 {
+    padding: 0 0 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section5 .hero1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 25.5px;
+}
+
+.section5 .hero1 img {
+    width: 161.24px;
+    height: 40.82px;
+}
+
+.section5 .hero1 ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.section5 .hero1 ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    transition: all .3s ease;
+}
+
+.section5 .hero1 ul a:hover {
+    color: rgb(246, 126, 126);
+}
+
+.section5 .hero2 {
+    width: 35%;
+    text-align: start;
+}
+
+.section5 .hero3 {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section5 .hero3 .apps {
+    width: 107.35px;
+    height: 24.49px;
+    margin-left: auto;
+}
+
+.section5 .hero3 .copyright {
+    width: 257.07px;
+    height: 16px;
+    margin-left: auto;
+}
+
+.section5 .hero2 #m1 {
+    display: none;
+}
+
+.section5 .hero2 #m2 {
+    display: none;
+}
+
+.section5 .my_team {
+    display: none;
+}
+
+@media (max-width: 1275px) {
+    .section4 h1 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 975px) {
+    .container {
+        padding: 55px 40px 0;
+    }
+    .section1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section1 h1 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 56px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .section1 p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 28px;
+        width: 75%;
+        text-align: center;
+    }
+    .section2 {
+        flex-wrap: wrap;
+    }
+    .section2 h1 {
+        width: 80%;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-top: 80px;
+        margin-bottom: 65px;
+    }
+    .section2 ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+    .section2 ul li { 
+        align-items: center;
+    }
+    .section2 ul li img {
+        display: flex;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section3 .people {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    .section3 > h1 {
+        display: none;
+    }
+    .section3 .people > div {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .section5 {
+        flex-wrap: wrap;
+    }
+    .section5 .hero3{
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .section5 .hero1 {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 25.5px;
+        margin-bottom: 35px;
+    }
+    .section5 .hero2 {
+        width: 30%;
+    }
+    .section5 .hero2 .m1 {
+        display: none;
+    }
+    .section5 .hero2 #m1 {
+        display: block;
+    }
+    .section5 .hero3 {
+        width: 100%;
+        flex-direction: row;
+    }
+    .section5 .hero3 .apps {
+        width: 107.35px;
+        height: 24.49px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .container {
+        padding: 48px 24px 0;
+    }
+    header .ul_div ul {
+        display: none;
+    }
+    header .contact_us_btn {
+        display: none;
+    }
+    header .menu_btn {
+        display: block;
+        cursor: pointer;
+        background-color: inherit;
+        border: none;
+    }
+    header .menu_btn i {
+        font-size: 20px;
+        color: white;
+    }
+    header .ul_div > img {
+        width: 127.96px;
+        height: 32px;
+    }
+    .section1 h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .section1 p {
+        display: none;
+    }
+    .section2 > h1 {
+        display: none;
+    }
+    .section2 ul li {
+        display: flex;
+        flex-direction: column;
+    }
+    .section4 {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        padding: 21px 0 76px;
+    }
+    .section4 h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .section4 button {
+        width: 155px;
+        height: 48px;
+        margin: auto;
+    }
+    .section5 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .section5 .hero2 #m1 {
+        display: none;
+    }
+    .section5 .hero2 #m2 {
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+    .section5 .hero3 {
+        width: 100%;
+        flex-direction: column;
+    }
+    .section5 .hero3 .copyright {
+        width: 257.07px;
+        height: 16px;
+        margin-left: 0;
+        margin: auto;
+    }
+    .section5 .hero3 .apps {
+        width: 107.35px;
+        height: 24.49px;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+    .section5 .hero2 {
+        display: none;
+    }
+    .section5 .hero3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section5 .hero1 {
+        display: none;
+    }
+    .section5 .my_team {
+        display: block;
+        text-align: center;
+    }
+    .section5 .my_team .img1 {
+        margin-bottom: 24px;
+    }
+    .section5 .my_team .img2 {
+        margin-bottom: 40px;
+    }
+    .section5 .my_team ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+    .section5 .my_team ul a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: Livvic;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        transition: all .3s ease;
+    }
+    
+    .section5 .my_team ul a:hover {
+        color: rgb(246, 126, 126);
+    }
+}
