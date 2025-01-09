@@ -26,6 +26,7 @@
     max-width: 1440px;
     padding: 0 170px 0;
     margin: auto;
+    position: relative;
 }
 
 header {
@@ -81,7 +82,66 @@ header .contact_us_btn {
     transition: all .3s ease;
 }
 
-header #menu_btn {
+.hidden-menu {
+    display: none;
+    background: rgb(44, 98, 105);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 112px 48px 0;
+}
+
+header .menu_btn:hover .hidden-menu {
+    display: block;
+}
+
+.hidden-menu a {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;
+    transition: all .5s ease;
+    margin-top: 24px;
+}
+
+.hidden-menu .a1 {
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 24px;
+    padding: 10px 32px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    transition: all .3s ease;
+    margin-top: 36px;
+}
+
+.hidden-menu a:hover {
+    color: black;
+}
+
+.hidden-menu .a1:hover {
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 24px;
+    padding: 10px 32px;
+    cursor: pointer;
+}
+
+header .menu_btn {
     display: none;
 }
 
@@ -470,13 +530,13 @@ header .contact_us_btn:hover {
     header .contact_us_btn {
         display: none;
     }
-    header #menu_btn {
+    header .menu_btn {
         display: block;
         cursor: pointer;
         background-color: inherit;
         border: none;
     }
-    header #menu_btn i {
+    header .menu_btn i {
         font-size: 20px;
         color: white;
     }
