@@ -568,8 +568,17 @@ header .contact_us_btn:hover {
         letter-spacing: 0px;
         transition: all .3s ease;
     }
-    
     .section5 .my_team ul a:hover {
         color: rgb(246, 126, 126);
     }
+    .section3 .clients img {
+        margin: auto;
+    }
+    .section3 .clients {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+    }
+    
 }
