@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -11,20 +11,25 @@
 }
 
 .for_background2 {
-    background-color: rgb(1, 47, 52);
+    background: rgb(0, 64, 71);
 }
 
 .for_background3 {
+    background-color: rgb(1, 47, 52);
+}
+
+.for_background4 {
     background: rgb(246, 126, 126);
 }
 
 .container {
     max-width: 1440px;
-    padding: 55px 170px 0;
+    padding: 0 170px 0;
     margin: auto;
 }
 
 header {
+    padding-top: 55px;
     max-width: 1100px;
     display: flex;
     justify-content: space-between;
@@ -76,7 +81,7 @@ header .contact_us_btn {
     transition: all .3s ease;
 }
 
-header .menu_btn {
+header #menu_btn {
     display: none;
 }
 
@@ -95,7 +100,6 @@ header .contact_us_btn:hover {
 .section1 {
     display: flex;
     justify-content: space-between;
-    align-items: end;
     padding-bottom: 245px;
 }
 
@@ -109,10 +113,6 @@ header .contact_us_btn:hover {
     color: rgb(255, 255, 255);
 }
 
-.section1 h1 span {
-    color: rgb(246, 126, 126);
-}
-
 .section1 p {
     color: rgb(255, 255, 255);
     font-family: Livvic;
@@ -122,16 +122,13 @@ header .contact_us_btn:hover {
     letter-spacing: 0px;
     text-align: left;
     width: 40%;
-
-    margin-bottom: 15px;
 }
 
     /* SECTION2 */
 .section2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 140px;
+    flex-direction: column;
+    padding: 140px 0 96px;
 }
 
 .section2 > h1 {
@@ -141,138 +138,117 @@ header .contact_us_btn:hover {
     font-weight: 700;
     line-height: 48px;
     letter-spacing: 0px;
-    text-align: left;
-    width: 40%;
+    text-align: center;
+    margin: 0 0 65px;
 }
 
-.section2 ul {
+.people {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.people > .div1 {
+    text-align: center;
+    /* padding: 32px 120px 0; */
+    width: 350px;
+    height: 235px;
+    background-color: rgb(1, 47, 52);
+    position: relative;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 40px;
-    width: 50%;
+    align-items: center;
+    margin-bottom: 76px;
+    padding: 0 48px;
 }
 
-.section2 ul li {
-    display: flex;
+.people > div .person_img {
+    margin-bottom: 16px;
 }
 
-.section2 ul li p {
-    display: flex;
-    align-items: end;
+.people > div h1 {
     color: rgb(255, 255, 255);
     font-family: Livvic;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 25px;
-    letter-spacing: 0px;
-    text-align: left;
+    margin-bottom: 56px;
 }
 
-.section2 ul li img {
-    margin-right: 25px;
-    height: 72px;
+.people > div .empowered {
+    margin-bottom: 24px;
 }
 
-.section2 ul li h1 {
-    color: rgb(246, 126, 126);
+.people > div .bird {
+    margin-bottom: 65px;
+}
+
+.people > div .aden {
+    margin-top: 35px;
+}
+
+.people > div p {
+    color: rgb(121, 200, 199);
     font-family: Livvic;
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 0px;
-    text-align: left;
-    margin-bottom: 16px;
+}
+
+.people > div .plus {
+    position: absolute;
+    bottom: -28px;
 }
 
     /* SECTION3 */
 .section3 {
-    display: flex;
-    flex-direction: column;
-    padding: 155px 0 145px;
-    gap: 40px;
-    text-align: center;
+    padding: 140px 0 156px;
 }
 
-.section3 > h1 {
+.section3 h1 {
+    color: rgb(255, 255, 255);
     font-family: Livvic;
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: 0px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    margin-bottom: 64px;
 }
 
-.section3 > h1 span {
-    color: rgb(121, 200, 199);
-}
-
-.section3 .people {
+.section3 .clients {
     display: flex;
     justify-content: space-between;
 }
-
-.section3 .people > div {
-    position: relative;
-    width: 30%;
-    display: flex;
-    justify-content: center;
+.verge {
+    width: 165px;
+    height: 28px;
 }
-
-.section3 .people > div > img {
-    position: absolute;
-    width: 67px;
-    height: 56px;
+.jakarta {
+    width: 184px;
+    height: 23px;
 }
-
-.section3 .people > div .name {
-    position: relative;
+.buardian {
+    width: 180px;
+    height: 28px;
 }
-
-.section3 .people > div .name .p1 {
-    color: rgb(255, 255, 255);
-    font-family: Livvic;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
-    letter-spacing: 0px;
-    text-align: center;
-    margin: 36px 0 24px;
+.techradar {
+    width: 165px;
+    height: 28px;
 }
-
-.section3 .people > div .name h1 {
-    color: rgb(121, 200, 199);
-    font-family: Livvic;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0px;
-    text-align: center;
-    margin-bottom: 2px;
-}
-
-.section3 .people > div .name .p2 {
-    color: rgb(255, 255, 255);
-    font-family: Livvic;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0px;
-    text-align: center;
-    margin-bottom: 32px;
-} 
-
-.section3 .people > div .name img {
-    margin-bottom: 10px;
-    width: 62px;
-    height: 62px;
+.gatgets {
+    width: 98px;
+    height: 45px;
 }
 
     /* SECTION4 */
 .section4 {
     display: flex;
     justify-content: space-between;
-    padding: 21px 0 76px;
+    padding: 76px 0 76px;
+    align-items: center;
 }
 
 .section4 h1 {
@@ -309,7 +285,7 @@ header .contact_us_btn:hover {
 
     /* SECTION5 */
 .section5 {
-    padding: 0 0 55px;
+    padding: 48px 0 55px;
     display: flex;
     justify-content: space-between;
 }
@@ -383,18 +359,40 @@ header .contact_us_btn:hover {
     display: none;
 }
 
-@media (max-width: 1275px) {
-    .section4 h1 {
-        font-size: 35px;
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 40px 0;
+        margin: auto;
+    }
+    .section3 h1 {
+        font-size: 32px;
         font-weight: 700;
-        line-height: 48px;
+        line-height: 32px;
+    }
+    .verge {
+        width: 100px;
+        height: 18px;
+    }
+    .jakarta {
+        width: 119px;
+        height: 13px;
+    }
+    .buardian {
+        width: 115px;
+        height: 18px;
+    }
+    .techradar {
+        width: 100px;
+        height: 18px;
+    }
+    .gatgets {
+        width: 33px;
+        height: 25px;
     }
 }
 
-@media (max-width: 975px) {
-    .container {
-        padding: 55px 40px 0;
-    }
+@media (max-width: 815px) {
     .section1 {
         flex-wrap: wrap;
         justify-content: center;
@@ -413,49 +411,6 @@ header .contact_us_btn:hover {
         line-height: 28px;
         width: 75%;
         text-align: center;
-    }
-    .section2 {
-        flex-wrap: wrap;
-    }
-    .section2 h1 {
-        width: 80%;
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 32px;
-        margin-top: 80px;
-        margin-bottom: 65px;
-    }
-    .section2 ul {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        width: 100%;
-    }
-    .section2 ul li { 
-        align-items: center;
-    }
-    .section2 ul li img {
-        display: flex;
-        margin-top: 50px;
-    }
-}
-
-@media (max-width: 768px) {
-    .section3 .people {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-    }
-    .section3 > h1 {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 32px;
-    }
-    .section3 .people > div {
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
     }
     .section5 {
         flex-wrap: wrap;
@@ -489,11 +444,26 @@ header .contact_us_btn:hover {
         height: 24.49px;
         margin-left: 0;
     }
+    .people > .div1 {
+        width: 281px;
+        height: 253px;
+    }
+    .section4 {
+        align-items: center;
+    }
+    .section4 h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+    }
 }
 
 @media (max-width: 660px) {
     .container {
-        padding: 48px 24px 0;
+        padding: 0 24px 0;
+    }
+    header {
+        padding-top: 48px;
     }
     header .ul_div ul {
         display: none;
@@ -501,13 +471,13 @@ header .contact_us_btn:hover {
     header .contact_us_btn {
         display: none;
     }
-    header .menu_btn {
+    header #menu_btn {
         display: block;
         cursor: pointer;
         background-color: inherit;
         border: none;
     }
-    header .menu_btn i {
+    header #menu_btn i {
         font-size: 20px;
         color: white;
     }
@@ -520,32 +490,17 @@ header .contact_us_btn:hover {
         font-weight: 700;
         line-height: 40px;
     }
-    .section1 p {
-        /* display: none; */
+    .people {
+        justify-content: center;
     }
-    .section2 > h1 {
-        /* display: none; */
-    }
-    .section2 ul li {
-        display: flex;
-        flex-direction: column;
+    .people > .div1 {
+        width: 327px;
+        height: 253px;
     }
     .section4 {
-        display: flex;
-        flex-direction: column;
-        padding: 21px 0 76px;
-    }
-    .section4 h1 {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 32px;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-    .section4 button {
-        width: 160px;
-        height: 48px;
-        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
     }
     .section5 {
         flex-direction: column;
