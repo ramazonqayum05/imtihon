@@ -11,15 +11,7 @@
 }
 
 .for_background2 {
-    background: rgb(0, 64, 71);
-}
-
-.for_background3 {
     background-color: rgb(1, 47, 52);
-}
-
-.for_background4 {
-    background: rgb(246, 126, 126);
 }
 
 .container {
@@ -95,191 +87,134 @@ header .contact_us_btn:hover {
     cursor: pointer;
 }
 
-/* SECTION1 */
-
+    /* SECTION1 */
 .section1 {
+    padding: 120px 0;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 245px;
+    align-items: center;
 }
 
-.section1 h1 {
+.section1 .hero1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section1 .hero1 > h1 {
+    color: rgb(255, 255, 255);
     font-family: Livvic;
-    font-size: 100px;
+    font-size: 64px;
     font-weight: 700;
     line-height: 100px;
     letter-spacing: 0px;
     text-align: left;
-    color: rgb(255, 255, 255);
 }
 
-.section1 p {
-    color: rgb(255, 255, 255);
+.section1 .hero1 > h2 {
+    color: rgb(246, 126, 126);
     font-family: Livvic;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 0px;
-    text-align: left;
-    width: 40%;
-}
-
-    /* SECTION2 */
-.section2 {
-    display: flex;
-    flex-direction: column;
-    padding: 140px 0 96px;
-}
-
-.section2 > h1 {
-    color: rgb(255, 255, 255);
-    font-family: Livvic;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: 0px;
-    text-align: center;
-    margin: 0 0 65px;
+    text-align: left;
+    margin-top: 16px;
 }
 
-.people {
+.section1 .hero1 ul {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.people > .div1 {
-    text-align: center;
-    /* padding: 32px 120px 0; */
-    width: 350px;
-    height: 235px;
-    background-color: rgb(1, 47, 52);
-    position: relative;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
+    gap: 40px;
+    margin-top: 32px;
+}
+
+.section1 .hero1 ul li {
+    display: flex;
     align-items: center;
-    margin-bottom: 76px;
-    padding: 0 48px;
 }
 
-.people > div .person_img {
-    margin-bottom: 16px;
-}
-
-.people > div h1 {
+.section1 .hero1 ul li p {
+    display: flex;
+    align-items: end;
     color: rgb(255, 255, 255);
     font-family: Livvic;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 25px;
-    margin-bottom: 56px;
-}
-
-.people > div .empowered {
-    margin-bottom: 24px;
-}
-
-.people > div .bird {
-    margin-bottom: 65px;
-}
-
-.people > div .aden {
-    margin-top: 35px;
-}
-
-.people > div p {
-    color: rgb(121, 200, 199);
-    font-family: Livvic;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0px;
-}
-
-.people > div .plus {
-    position: absolute;
-    bottom: -28px;
-}
-
-    /* SECTION3 */
-.section3 {
-    padding: 140px 0 156px;
-}
-
-.section3 h1 {
-    color: rgb(255, 255, 255);
-    font-family: Livvic;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 48px;
-    letter-spacing: 0px;
-    text-align: center;
-    margin-bottom: 64px;
-}
-
-.section3 .clients {
-    display: flex;
-    justify-content: space-between;
-}
-.verge {
-    width: 165px;
-    height: 28px;
-}
-.jakarta {
-    width: 184px;
-    height: 23px;
-}
-.buardian {
-    width: 180px;
-    height: 28px;
-}
-.techradar {
-    width: 165px;
-    height: 28px;
-}
-.gatgets {
-    width: 98px;
-    height: 45px;
-}
-
-    /* SECTION4 */
-.section4 {
-    display: flex;
-    justify-content: space-between;
-    padding: 76px 0 76px;
-    align-items: center;
-}
-
-.section4 h1 {
-    color: rgb(1, 47, 52);
-    font-family: Livvic;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 48px;
     letter-spacing: 0px;
     text-align: left;
 }
 
-.section4 button {
-    box-sizing: border-box;
-    border: 2px solid rgb(1, 47, 52);
-    border-radius: 24px;
-    padding: 10px 32px;
-    background-color: rgb(246, 126, 126);
-    cursor: pointer;
-    text-decoration: none;
-    color: rgb(1, 47, 52);
+.section1 .hero1 ul li img {
+    margin-right: 25px;
+    height: 72px;
+}
+
+.hero2 {
+    width: 55%;
+}
+
+.hero2 form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero2 form input {
+    padding: 0 80px 13px 15px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-family: Livvic;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12px;
+}
+
+.hero2 form input:hover {
+    border-bottom: 1px solid rgb(246, 126, 126);
+}
+
+::placeholder {
+    color: white;
+}
+
+.hero2 form textarea {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-family: Livvic;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12px;
+    padding: 0 80px 13px 15px;
+    height: 84px;
+}
+
+.hero2 form button {
+    padding: 6px 32px 10px;
+    color: rgb(0, 64, 71);
     font-family: Livvic;
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
     letter-spacing: 0px;
-    transition: all .3s ease;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 24px;
+    background: rgb(255, 255, 255);
+    width: 123px;
+    height: 48px;
+    cursor: pointer;
+    transition: all .5s ease;
 }
 
-.section4 button:hover {
-    background-color: rgb(1, 47, 52);
+.hero2 form button:hover {
+    background-color: black;
     color: white;
 }
 
@@ -359,59 +294,25 @@ header .contact_us_btn:hover {
     display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
+    .section1 {
+        flex-direction: column;
+        gap: 164px;
+    }
+    .section1 .hero1 {
+        width: 515px;
+        height: 384px;
+    }
+    .section1 .hero2 {
+        width: 540px;
+        height: 348px;
+    }
     .container {
-        max-width: 1440px;
         padding: 0 40px 0;
-        margin: auto;
-    }
-    .section3 h1 {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 32px;
-    }
-    .verge {
-        width: 100px;
-        height: 18px;
-    }
-    .jakarta {
-        width: 119px;
-        height: 13px;
-    }
-    .buardian {
-        width: 115px;
-        height: 18px;
-    }
-    .techradar {
-        width: 100px;
-        height: 18px;
-    }
-    .gatgets {
-        width: 33px;
-        height: 25px;
     }
 }
 
-@media (max-width: 815px) {
-    .section1 {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .section1 h1 {
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 56px;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 24px;
-    }
-    .section1 p {
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 28px;
-        width: 75%;
-        text-align: center;
-    }
+@media (max-width: 768px) {
     .section5 {
         flex-wrap: wrap;
     }
@@ -446,14 +347,6 @@ header .contact_us_btn:hover {
     .people > .div1 {
         width: 281px;
         height: 253px;
-    }
-    .section4 {
-        align-items: center;
-    }
-    .section4 h1 {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 32px;
     }
 }
 
@@ -495,11 +388,6 @@ header .contact_us_btn:hover {
     .people > .div1 {
         width: 327px;
         height: 253px;
-    }
-    .section4 {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 24px;
     }
     .section5 {
         flex-direction: column;
@@ -570,13 +458,25 @@ header .contact_us_btn:hover {
     .section5 .my_team ul a:hover {
         color: rgb(246, 126, 126);
     }
-    .section3 .clients img {
-        margin: auto;
+    .section1 {
+        padding: 80px 0;
     }
-    .section3 .clients {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 60px;
+    .section1 .hero1 {
+        width: 100%;
+    }
+    .section1 .hero2 {
+        width: 100%;
+    }
+    .section1 .hero1 > h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+    }
+    .section1 .hero1 > h2 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: center;
     }
 }
